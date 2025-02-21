@@ -27,3 +27,11 @@ useFonts({
 
 Chapter 4 :- Run On Web Browser
 View on web by pressing w in terminal after app is started
+
+Chapter 5 :- Sign In & Sign Up Screen
+import {useRouter} from "expo-router"
+const router = useRouter() //using router
+
+<TouchableOpacity 
+onPress={() => router.push('./auth/signIn')} //using router in a button
+>
