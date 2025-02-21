@@ -24,3 +24,6 @@ useFonts({
 <Text style={{
     fontFamily: "outfit-bold" //in the text components we can give the fontFamily
 }}>
+
+Chapter 4 :- Run On Web Browser
+View on web by pressing w in terminal after app is started

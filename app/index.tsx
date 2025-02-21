@@ -11,7 +11,7 @@ export default function Index() {
     >
       <Image 
         source={require("../assets/images/landing.png")}
-        style={{width:"100%", height:300, marginTop: 70}}
+        style={{width:"100%", height:300, marginTop: 30, marginBottom: 30}}
       />
       <View style={{
         padding: 25,
