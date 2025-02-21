@@ -1,0 +1,11 @@
+Source :- Tubeguruji YT 
+Video Title :- React Native Tutorial | Build Full Stack React Native App with Expo | Beginner Course
+
+To create expo App:-
+npx create-expo-app@latest
+
+To run the expo App:-
+npm run start
+
+To reset the expo App:-
+npm run reset-project //to clear all initial code
