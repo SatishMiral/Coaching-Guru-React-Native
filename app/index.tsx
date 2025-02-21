@@ -1,15 +1,65 @@
-import { Text, View } from "react-native";
+import { Text, View, Image, StyleSheet } from "react-native";
+import Colors from "../constants/Colors"
 
 export default function Index() {
   return (
     <View
       style={{
         flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
+        backgroundColor: Colors.WHITE
       }}
     >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+      <Image 
+        source={require("../assets/images/landing.png")}
+        style={{width:"100%", height:300, marginTop: 70}}
+      />
+      <View style={{
+        padding: 25,
+        backgroundColor: Colors.PRIMARY,
+        height: "100%",
+        borderTopRightRadius: 35,
+        borderTopLeftRadius: 35
+      }}>
+        <Text style={{
+          color: Colors.WHITE,
+          fontSize: 32,
+          fontWeight: "500",
+          textAlign: "center"
+        }}>
+          Welcome To Coaching Guru
+        </Text>
+        <Text style={{
+          fontSize: 20,
+          color: Colors.WHITE,
+          marginTop: 20,
+          textAlign: "center"
+        }}>
+          Transform your Ideas into engaging educational content, effortlessly with AI 📚 🤖
+        </Text>
+        <View style={[styles.button, {marginTop: 40}]}>
+          <Text style={[styles.buttonText, {color: Colors.PRIMARY}]}>Get Started</Text>
+        </View>
+        <View style={[styles.button,{
+          backgroundColor: Colors.PRIMARY,
+          borderWidth: 1,
+          borderColor: Colors.WHITE
+        }]}>
+          <Text style={[styles.buttonText, {color: Colors.WHITE}]}>Already have an account?</Text>
+        </View>
+      </View>
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  button: {
+    padding: 15,
+    backgroundColor: Colors.WHITE,
+    marginTop: 10,
+    borderRadius: 10
+  },
+  buttonText: {
+    textAlign: "center",
+    fontSize: 18
+  }
+})
