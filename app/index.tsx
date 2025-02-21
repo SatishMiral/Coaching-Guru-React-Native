@@ -18,13 +18,13 @@ export default function Index() {
         backgroundColor: Colors.PRIMARY,
         height: "100%",
         borderTopRightRadius: 35,
-        borderTopLeftRadius: 35
+        borderTopLeftRadius: 35,
       }}>
         <Text style={{
           color: Colors.WHITE,
           fontSize: 32,
-          fontWeight: "500",
-          textAlign: "center"
+          textAlign: "center",
+          fontFamily: "outfit-bold"
         }}>
           Welcome To Coaching Guru
         </Text>
@@ -32,7 +32,8 @@ export default function Index() {
           fontSize: 20,
           color: Colors.WHITE,
           marginTop: 20,
-          textAlign: "center"
+          textAlign: "center",
+          fontFamily: "outfit"
         }}>
           Transform your Ideas into engaging educational content, effortlessly with AI 📚 🤖
         </Text>
@@ -60,6 +61,7 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     textAlign: "center",
-    fontSize: 18
+    fontSize: 18,
+    fontFamily: "outfit"
   }
 })

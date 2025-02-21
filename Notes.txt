@@ -1,6 +1,7 @@
 Source :- Tubeguruji YT 
 Video Title :- React Native Tutorial | Build Full Stack React Native App with Expo | Beginner Course
 
+Chapter 1 :- create and run react native app with expo
 To create expo App:-
 npx create-expo-app@latest
 
@@ -9,3 +10,17 @@ npm run start
 
 To reset the expo App:-
 npm run reset-project //to clear all initial code
+
+Chapter 2 :- Landing Screen
+covered basic styling and components like View, Text & Image
+
+Chapter 3 :- App font
+import {useFonts} from "expo-font"
+useFonts({
+    'outfit': require('../assets/fonts/Outfit-Regular.ttf'), //we can use any fonts like this
+    'outfit-bold': require('../assets/fonts/Outfit-Bold.ttf') 
+})
+
+<Text style={{
+    fontFamily: "outfit-bold" //in the text components we can give the fontFamily
+}}>
